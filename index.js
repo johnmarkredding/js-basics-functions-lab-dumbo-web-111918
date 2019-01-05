@@ -27,11 +27,11 @@ function calculatesFarePrice(start, destination) {
   let result;
   let feet = distanceTravelledInFeet(start, destination);
   if (400 < feet <= 2000) {
-    
+    result = (feet - 400) * 0.2;
   } else if (2000 < feet < 2500) {
-    result = feet * 4;
-  } else {
-    result = feet;
+    result = "Flat fee.";
+  } else if (feet > 2500) {
+    result = 'cannot travel tht far.';
   }
   
   return result;
