@@ -1,1 +1,36 @@
 // Code your solution in this file!
+function distanceFromHqInBlocks(street) {
+  let result;
+  if (street - 42 >= 0) {
+    result = street - 42;
+  } else {
+    result = 42 - street;
+  }
+  return result;
+}
+
+function distanceFromHqInFeet(street) {
+  return distanceTravelledInFeet(street, 42);
+}
+
+function distanceTravelledInFeet(street1, street2) {
+  let result;
+  if (street1 - street2 >= 0) {
+    result = (street1 - street2) * 264;
+  } else {
+    result = (street2 - street1) * 264;
+  }
+  return result;
+}
+
+function calculatesFarePrice(start, destination) {
+  let result;
+  let ;
+  if (start - destination >= 0) {
+    result = (start - destination) * 264;
+  } else {
+    result = (destination - start) * 264;
+  }
+  
+  return result;
+}
